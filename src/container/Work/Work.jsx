@@ -52,6 +52,7 @@ const Work = () => {
   return (
     <>
     {
+     
       works.length&&(
         <>
         <h2 className="head-text"> <span>selected projects</span></h2>
@@ -82,7 +83,7 @@ const Work = () => {
                   className="app__work-hover app__flex"
                 >
               
-                  <a href={`//${works[currentIndex].arcticleLink}`} target="_blank" rel="noreferrer">
+                  <a href={`${works[currentIndex].projectLink}`} target="_blank" rel="noreferrer">
                     <motion.div
                       whileInView={{ scale: [0, 1] }}
                       whileHover={{ scale: [1, 0.90] }}
@@ -97,7 +98,7 @@ const Work = () => {
   
               <div className="app__work-content app__flex">
                 <h4 className="bold-text">{works[currentIndex].title}</h4>
-                <p className="p-text" style={{ marginTop: 10 }}>{works.description}</p>
+                <p className="p-text" style={{ marginTop: 10 }}>{works[currentIndex].description}</p>
   
                 
               </div>

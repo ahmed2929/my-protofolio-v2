@@ -98,7 +98,7 @@ const Articles = () => {
   
               <div className="app__work-content app__flex">
                 <h4 className="bold-text">{works[currentIndex].title}</h4>
-                <p className="p-text" style={{ marginTop: 10 }}>{works.description}</p>
+                <p className="p-text" style={{ marginTop: 10 }}>{works[currentIndex].description}</p>
   
                 
               </div>
@@ -126,6 +126,6 @@ const Articles = () => {
 
 export default AppWrap(
   MotionWrap(Articles, 'app__works'),
-  'Articles',
+  'articles',
   'app__primarybg',
 );
