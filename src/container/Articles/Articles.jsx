@@ -83,7 +83,7 @@ const Articles = () => {
                   className="app__work-hover app__flex"
                 >
               
-                  <a href={`//${works[currentIndex].arcticleLink}`} target="_blank" rel="noreferrer">
+                  <a href={`${works[currentIndex].arcticleLink}`} target="_blank" rel="noreferrer">
                     <motion.div
                       whileInView={{ scale: [0, 1] }}
                       whileHover={{ scale: [1, 0.90] }}
